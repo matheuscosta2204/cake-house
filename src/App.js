@@ -3,6 +3,13 @@ import logo from './logo.svg';
 import './App.css';
 
 class App extends Component {
+
+  scrollToMyRef = () => window.scrollTo({
+                          top: this.aRef.offsetTop,
+                          left: 0,
+                          behavior: 'smooth'
+                        });
+
   render() {
     return (
       <div className="App">
@@ -19,7 +26,15 @@ class App extends Component {
           >
             Learn React
           </a>
+          <a
+            onClick={() => this.scrollToMyRef()}
+          >
+            Press me
+          </a>
         </header>
+        <section ref={ (ref) => this.aRef = ref } style={{ height: '1000px' }}>
+          Ola Mundo
+        </section>
       </div>
     );
   }
