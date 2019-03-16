@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+import Layout from './components/layout/Layout';
+
 class App extends Component {
 
   scrollToMyRef = (ref) => window.scrollTo({
@@ -10,9 +12,7 @@ class App extends Component {
 
   render() {
     return (
-      <div>
-       
-      </div>
+      <Layout />
     );
   }
 }
