@@ -1,22 +1,25 @@
 import React, { Component } from 'react';
+import Headroom from 'react-headroom';
+
+import classes from './Toolbar.css';
+import logo from '../../../assets/images/logo2.png';
 
 class Toolbar extends Component {
   render() {
     return (
-      <header>
-        <nav id="nav-wrap">
-            <a className="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
-            <a className="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
-            <ul id="nav" className="nav">
-               <li className="current"><a className="smoothscroll" href="#home">Home</a></li>
-               <li><a className="smoothscroll" href="#about">About</a></li>
-               <li><a className="smoothscroll" href="#resume">Resume</a></li>
-               <li><a className="smoothscroll" href="#portfolio">Works</a></li>
-               <li><a className="smoothscroll" href="#testimonials">Testimonials</a></li>
-               <li><a className="smoothscroll" href="#contact">Contact</a></li>
-            </ul>
-         </nav>
-      </header>
+      <Headroom>
+        <div className={classes.Toolbar}>
+          <div>
+            <img src={logo} width="80%" height="80%" href="" />
+          </div>
+          <div className={classes.ItemContainer}>
+            <a className={classes.Item} href="#">Home</a>
+            <a className={classes.Item} href="#">Products</a>
+            <a className={classes.Item} href="#">About</a>
+            <a className={classes.Item} href="#">Contact Us</a>
+          </div>
+        </div>
+      </Headroom>
     );
   }
 }
