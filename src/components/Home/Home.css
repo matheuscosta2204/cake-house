@@ -1,6 +1,7 @@
 .Home {
-    margin-top: 56px;
+    /* margin-top: 56px; */
     /* height: 200vh; */
+    background-color: #B89F7A;
 }
 
 .BackgroundImage {
@@ -9,4 +10,17 @@
     background-size: cover;
     background-position: center center;
     background-image: url("../../assets/images/backgroundImage.jpg");
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    padding-right: 30px;
+    padding-top: 200px;
+}
+
+.TextIntro {
+    width: 50%;
+}
+
+.TextIntro h1, h2 {
+    color: white;
 }

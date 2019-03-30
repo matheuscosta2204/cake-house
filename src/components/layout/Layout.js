@@ -1,15 +1,31 @@
 import React, { Component } from 'react';
+import { Element } from 'react-scroll';
 
 import Toolbar from '../Navigation/Toolbar/Toolbar';
 import Home from '../Home/Home';
+import Products from '../Products/Products';
 
 class Layout extends Component {
+
+  // scrollToMyRef = (ref) => {
+
+  //   ref = this.myRef;
+  //   console.log(ref);
+
+  //   window.scrollTo({
+  //     top: ref,
+  //     left: 0,
+  //     behavior: 'smooth'
+  //   })
+  // };
+
   render() {
     return (
-        <div>
+        <Element name="home">
           <Toolbar />
-          <Home />
-        </div>
+          <Home  />
+          <Products />
+        </Element>
     );
   }
 }
