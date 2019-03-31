@@ -1,0 +1,48 @@
+.ModalContainer {
+    width: 100%;
+    height: 100%;
+    background-color: #B89F7A;
+    border-radius: 8px;
+    box-shadow: 8px 10px 10px 1px #423624;
+}
+
+@keyframes modalInit {
+    0%   {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    50%  {
+        opacity: 1;
+        transform: translateY(90%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.ModalHeader {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px 0 20px;
+    background-color: #745f3e;
+    box-shadow: 5px 5px 10px 1px #423624;
+}
+
+.ModalTitle {
+    font-size: 2em;
+}
+
+.ModalExitIcon {
+    font-size: 2em; 
+    color: white;
+}
+
+.ModalExitIcon:hover {
+    cursor: pointer;
+    color: rgba(0,0,0, 0.4);
+}

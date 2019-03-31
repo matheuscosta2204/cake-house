@@ -15,18 +15,94 @@
     height: 100%;
 }
 
+.ProductContainer:hover {
+    cursor: pointer;
+}
+
+.ProductText {
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+    color: white;
+    font-weight: bold;
+    border: 3px solid #f1f1f1;
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    top: -50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
 .First {
+    height: 100%;
     background-color: #B8AE85;
+    background-image: url("../../assets/images/cake3.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.FirstHoverd {
+    height: 100%;
+    background-color: #B8AE85;
+    background-image: url("../../assets/images/cake3.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
 }
 
 .Second {
+    height: 100%;
     background-color: #FFAFA7;
+    /* background-image: url("../../assets/images/candies3.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%; */
+}
+
+.SecondHoverd {
+    height: 100%;
+    background-color: #FFAFA7;
+    /* background-image: url("../../assets/images/cake3.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%; */
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
 }
 
 .Third {
+    height: 100%;
     background-color: #E3AAE8;
+    /* background-image: url("../../assets/images/cup-cake.jpeg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%; */
+}
+
+.ThirdHoverd {
+    height: 100%;
+    background-color: #E3AAE8;
+    /* background-image: url("../../assets/images/cake3.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%; */
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
 }
 
 .Fourth {
+    height: 100%;
     background-color: #BFB2FF;
+    /* background-image: url("../../assets/images/meringue.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%; */
+}
+
+.FourthHoverd {
+    height: 100%;
+    background-color: #BFB2FF;
+    /* background-image: url("../../assets/images/cake3.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%; */
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
 }
