@@ -1,6 +1,7 @@
 .Products {
     height: 100vh;
     background-color: #b89f7a;
+    box-sizing: border-box;
 }
 
 .RowProducts {

@@ -1,12 +1,15 @@
 .Home {
     /* margin-top: 56px; */
     /* height: 200vh; */
+    width: 100%;
     background-color: #B89F7A;
+    box-sizing: border-box;
 }
 
 .BackgroundImage {
     width: 100%;
     height: 90vh;
+    box-sizing: border-box;
     background-size: cover;
     background-position: center center;
     background-image: url("../../assets/images/backgroundImage.jpg");

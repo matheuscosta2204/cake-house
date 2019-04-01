@@ -1,11 +1,23 @@
 import React from 'react';
 
 import classes from './Modal.css';
+import Backdrop from '../Backdrop/Backdrop';
 
-const modal = (props) => (
-    <div className={classes.Modal}>
-        {props.children}
-    </div>
-);
+const modal = (props) => {
+
+    // const cssClasses = [classes.Modal,  ? classes.ModalOpen : classes.ModalClosed];
+    if(props.show) {
+        return (
+            <>
+                <Backdrop show={props.show} clicked={props.modalClosed} />
+                <div className={classes.Modal}>
+                    {props.children}
+                </div>
+            </>
+        );
+    } else {
+        return ( <></> );
+    }
+};
 
 export default modal;

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Headroom from 'react-headroom';
-import { bounceInDown } from 'react-animations';
+import { slideInDown } from 'react-animations';
 import { StyleSheet, css } from 'aphrodite';
 import { Link } from 'react-scroll';
 
@@ -9,7 +9,7 @@ import logo from '../../../assets/images/logo2.png';
 
 class Toolbar extends Component {
   render() {
-    const toolbar = [classes.Toolbar, css(styles.bounceInDown)];
+    const toolbar = [classes.Toolbar, css(styles.slideInDown)];
 
     return (
       <Headroom className={classes.Headroom}>
@@ -60,8 +60,8 @@ class Toolbar extends Component {
 export default Toolbar;
 
 const styles = StyleSheet.create({
-  bounceInDown: {
-    animationName: bounceInDown,
+  slideInDown: {
+    animationName: slideInDown,
     animationDuration: '1s'
   }
 });

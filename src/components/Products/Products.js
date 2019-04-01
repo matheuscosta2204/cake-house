@@ -37,8 +37,8 @@ class Products extends Component {
   render() {
     return (
         <>
-          <Modal>
-            <Details />
+          <Modal show={this.state.isModalVisible} modalClosed={() => this.setState({ isModalVisible: false })}>
+            <Details modalClosed={() => this.setState({ isModalVisible: false })} />
           </Modal>
           <Element name="products" className={classes.Products}>
             <div className={classes.RowProducts}>
