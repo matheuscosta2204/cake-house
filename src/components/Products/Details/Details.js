@@ -16,7 +16,7 @@ const details = (props) => {
                 <p className={classes.ModalTitle}>Details</p>
                 <span 
                     className={classes.ModalExitIcon} 
-                    onClick={props.modalClosed}><i className="fas fa-times"></i></span>            
+                    onClick={props.modalClosed}><i className="fas fa-times"></i></span>
             </div>
             <div className={classes.ModalContent}>
                 <div className={cssDescription.join(' ')}>

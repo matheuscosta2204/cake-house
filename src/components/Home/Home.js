@@ -11,9 +11,9 @@ class Home extends Component {
         <section className={classes.Home}>
           <div className={backgroundImage.join(' ')}>
             <div className={classes.TextIntro}>
-              <h1 className={css(styles.bounceInRight)}>Procurando lindos bolos para seus eventos?</h1>
-              <h2 className={css(styles.bounceInRight2)}>A Luiza Confeitaria é o lugar certo para encontrá-los.</h2>
-              <h2 className={css(styles.bounceInRight3)}>Entre em contato e faça seu pedido.</h2>
+              <p className={css(styles.bounceInRight)}>Procurando lindos bolos para seus eventos?</p>
+              <p className={css(styles.bounceInRight2)}>A Luiza Confeitaria é o lugar certo para encontrá-los.</p>
+              <p className={css(styles.bounceInRight3)}>Entre em contato e faça seu pedido.</p>
             </div>
           </div>
         </section>

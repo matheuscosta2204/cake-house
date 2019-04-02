@@ -11,23 +11,43 @@
     /* box-shadow: 0px 3px 10px 2px #888888; */
 }
 
-.Item {
-    color: #fff !important; /* I am using a third library to handle the scroll and the important is necessary. */
-    padding: 20px 10px;
-    margin: 0 30px 0 30px;
+.Logo {
+    width: 80%;
+    height: 80%;
 }
 
-.Item:hover, .Item.Active {
-    color: rgba(255, 255, 255, 0.5);
-    padding-bottom: 10px;
-    text-decoration: none;
-    cursor: pointer;
-    border-bottom: 3px solid #A13333;
+.Hamburguer {
+    display: none;
+    font-size: 2em; 
+    color: white;
+    outline:none;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 1055px) {
     .Toolbar {
-        height: 60px;
-        background-color: red;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* box-shadow: 0px 3px 10px 2px #888888; */
     }
-} 
+
+    .Logo {
+        width: 50%;
+        height: 50%;
+    }
+}
+
+@media (max-width: 815px) {
+    .Logo {
+        width: 50%;
+        height: 50%;
+    }
+
+    .ItemContainer {
+        display: none;
+    }
+
+    .Hamburguer {
+        display: block;
+    }
+}

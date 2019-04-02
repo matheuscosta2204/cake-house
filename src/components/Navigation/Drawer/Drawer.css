@@ -1,0 +1,11 @@
+.Drawer {
+    width: 60%;
+    background-color: #b89f7a;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 200;
+    right: 0px;
+}

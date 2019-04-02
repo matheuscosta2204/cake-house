@@ -24,6 +24,17 @@
     width: 50%;
 }
 
-.TextIntro h1, h2 {
+.TextIntro p {
     color: white;
+    font-size: 28px;
+}
+
+@media (max-width: 815px) {
+    .BackgroundImage {
+        padding-top: 20px;
+    }
+
+    .TextIntro p {
+        font-size: 20px;
+    }
 }

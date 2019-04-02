@@ -2,57 +2,50 @@ import React, { Component } from 'react';
 import Headroom from 'react-headroom';
 import { slideInDown } from 'react-animations';
 import { StyleSheet, css } from 'aphrodite';
-import { Link } from 'react-scroll';
 
 import classes from './Toolbar.css';
 import logo from '../../../assets/images/logo2.png';
+import ToolbarItems from './ToolbarItems/ToolbarItems';
+import Drawer from '../Drawer/Drawer';
 
 class Toolbar extends Component {
+  state = {
+    hamburgerActive: false
+  }
+
+  componentDidMount() {
+    window.addEventListener('scroll', this.handleScroll);
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('scroll', this.handleScroll);
+  }
+
+  handleScroll = () => {
+    this.setState({ hamburgerActive: false });
+  }
+
   render() {
     const toolbar = [classes.Toolbar, css(styles.slideInDown)];
 
+    const cssHamburger = ["hamburger", "hamburger--spring", "js-hamburger", classes.Hamburguer, this.state.hamburgerActive ? "is-active" : ""];
     return (
-      <Headroom className={classes.Headroom}>
-        <div className={toolbar.join(' ')}>
-          <div>
-            <img src={logo} width="80%" height="80%" href="" />
+      <>
+        <Headroom className={classes.Headroom}>
+          <div className={toolbar.join(' ')}>
+            <div>
+              <img src={logo} className={classes.Logo} />
+            </div>
+            <ToolbarItems />
+            <button class={cssHamburger.join(' ')} type="button" onClick={() => this.setState({ hamburgerActive: !this.state.hamburgerActive })}>
+              <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+              </span>
+            </button>
           </div>
-          <div className={classes.ItemContainer}>
-            <Link 
-              className={classes.Item} 
-              to="home" 
-              spy={true} 
-              smooth={true} 
-              offset={0} 
-              duration={1000}>Home</Link>
-            <Link 
-              className={classes.Item} 
-              to="products" 
-              spy={true} 
-              smooth={true} 
-              offset={0} 
-              duration={1000}>Products</Link>
-            <Link 
-              className={classes.Item} 
-              to="products" 
-              spy={true} 
-              smooth={true} 
-              offset={0} 
-              duration={1000}
-              onSetActive={this.handleSetActive}
-              onSetInactive={this.handleSetInactive}>About</Link>
-            <Link 
-              className={classes.Item} 
-              to="products" 
-              spy={true} 
-              smooth={true} 
-              offset={0} 
-              duration={1000}
-              onSetActive={this.handleSetActive}
-              onSetInactive={this.handleSetInactive}>Contact Us</Link>
-          </div>
-        </div>
-      </Headroom>
+        </Headroom>
+        <Drawer show={ this.state.hamburgerActive } />
+      </>
     );
   }
 }
@@ -63,5 +56,5 @@ const styles = StyleSheet.create({
   slideInDown: {
     animationName: slideInDown,
     animationDuration: '1s'
-  }
+  },
 });

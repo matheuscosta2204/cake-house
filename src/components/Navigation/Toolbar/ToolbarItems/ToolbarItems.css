@@ -1,0 +1,5 @@
+@media (max-width: 815px) {
+    .ItemContainer {
+        display: none;
+    }
+}
