@@ -6,6 +6,7 @@ import { StyleSheet, css } from 'aphrodite';
 import classes from './Products.css';
 import Modal from '../UI/Modal/Modal';
 import Details from './Details/Details';
+import Cakes from './Cakes/Cakes';
 
 const ProductContainer = (props) => {
   const textClasses = [css(styles.fadeIn), classes.ProductText];
@@ -40,6 +41,7 @@ class Products extends Component {
           <Modal show={this.state.isModalVisible} modalClosed={() => this.setState({ isModalVisible: false })}>
             <Details modalClosed={() => this.setState({ isModalVisible: false })} />
           </Modal>
+          <Cakes />
           <Element name="products" className={classes.Products}>
             <div className={classes.RowProducts}>
               <div 

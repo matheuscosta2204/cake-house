@@ -1,0 +1,39 @@
+.CakeDetails {
+    width: 100%;
+    height: 100%;
+    background-color: #B89F7A;
+    border-radius: 8px;
+}
+
+.CakeHeader {
+    height: 15%;
+    background-color: #A54E44;
+    color: white;
+    text-shadow: 2px 2px 2px rgba(54, 26, 23, 1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.CakeContent {
+    height: 75%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-weight: 400;
+    font-size: 20px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.ModalExitIcon {
+    font-size: 2rem;
+    margin-right: 10px;
+}
+
+.ModalExitIcon:hover {
+    cursor: pointer;
+}

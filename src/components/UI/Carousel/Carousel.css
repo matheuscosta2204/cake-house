@@ -1,0 +1,13 @@
+.Carousel {
+    box-sizing: border-box;
+    height: 50vh;
+    /* border-radius: 8px; */
+    box-shadow: 8px 8px 10px 1px #595959;
+    margin: 10px;
+}
+
+.CarouselImage {
+    box-sizing: border-box;
+    height: 50vh;
+    /* border-radius: 8px; */
+}
