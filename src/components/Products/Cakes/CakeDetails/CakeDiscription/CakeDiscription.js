@@ -12,6 +12,12 @@ const cakeDiscription = (props) => {
     const cssBase2 = [classes.Base, css(styles.flipInY3)];
     const cssFirstFilling = [classes.FirstFilling, css(styles.flipInY4)];
     const cssBase3 = [classes.Base, css(styles.flipInY5)];
+
+    const styleCakeTop = {backgroundColor: props.cake.cakeTopColor};
+    const styleBase = {backgroundColor: props.cake.baseColor};
+    const styleSecondFilling = {backgroundColor: props.cake.secondFillingColor};
+    const styleFirstFilling = {backgroundColor: props.cake.firstFillingColor};
+
     return (
         <div className={classes.CakeDiscription}>
             <div className={classes.CakeIcons}>
@@ -19,27 +25,28 @@ const cakeDiscription = (props) => {
                 <img src="icons/candles.png" width="50" height="50" />
                 <img src="icons/fireworks-right.png" width="50" height="50" />
             </div>
-            <div className={cssCakeTop.join(' ')}>
+            <div className={cssCakeTop.join(' ')} style={styleCakeTop}>
                 {props.cake.cakeTop}
-                <div className={cssBase1.join(' ')}>
+                <div className={cssBase1.join(' ')} style={styleBase}>
                     {props.cake.base}
                 </div>
-                <div className={cssSecondFilling.join(' ')}>
+                <div className={cssSecondFilling.join(' ')} style={styleSecondFilling}>
                     {props.cake.secondFilling}
                 </div>
-                <div className={cssBase2.join(' ')}>
+                <div className={cssBase2.join(' ')} style={styleBase}>
                     {props.cake.base}
                 </div>
-                <div className={cssFirstFilling.join(' ')}>
+                <div className={cssFirstFilling.join(' ')} style={styleFirstFilling}>
                     {props.cake.firstFilling}
                 </div>
-                <div className={cssBase3.join(' ')}>
+                <div className={cssBase3.join(' ')} style={styleBase}>
                     {props.cake.base}
                 </div>
             </div>
         </div>
-    )
-}
+    );
+};
+
 export default cakeDiscription;
 
 const styles = StyleSheet.create({
@@ -67,4 +74,4 @@ const styles = StyleSheet.create({
         animationName: flipInY,
         animationDuration: '2.5s'
     }
-  })
+  });

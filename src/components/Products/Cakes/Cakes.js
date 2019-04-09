@@ -9,9 +9,13 @@ const cardapio = [
     {
         title: "Abacaxi",
         base: "Pao de Lo Branco",
+        baseColor: "#fdfeb3",
         firstFilling: "Creme Tres Leite com Abacaxi",
+        firstFillingColor: "#fcfe81",
         secondFilling: "Beijinho",
+        secondFillingColor: "#fcfe81",
         cakeTop: "Chantily",
+        cakeTopColor: "#ffffff",
         cakeSlice: "images/cakeSlice1.jpg"
     },
     {
@@ -176,7 +180,7 @@ class Cakes extends React.Component {
                     </div>
                     <div className={classes.Content}>
                         <div className={classes.MenuItems}>
-                            <h2>Cardapio</h2>
+                            <h1>Cardapio</h1>
                             <ul>
                                 {cardapio.map((item, index) => (
                                     <li key={index} onClick={() => this.showModalCake(item)}><p>{item.title}</p></li>
