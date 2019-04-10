@@ -23,7 +23,7 @@ class Details extends React.Component {
       return (
           <div className={classes.ModalContainer}>
               <div className={cssModalHeader.join(' ')}>
-                  <p className={classes.ModalTitle}>Details</p>
+                  <p className={classes.ModalTitle}>{this.props.data.title}</p>
                   <span 
                       className={classes.ModalExitIcon} 
                       onClick={this.props.modalClosed}><i className="fas fa-times"></i></span>
