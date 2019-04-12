@@ -5,16 +5,6 @@ import { StyleSheet, css } from 'aphrodite';
 import classes from './Details.css';
 
 class Details extends React.Component {
-    state = {
-      second: 0
-    }
-    
-    countingSecond = () => {
-      let count;
-      setInterval(count = this.state.second++, 1000);
-      return count;
-    }
-
     render() {
       const cssModalHeader = [classes.ModalHeader, css(styles.slideInDown)];
       const cssDescription = [classes.Description, css(styles.zoomInLeft)];
@@ -30,7 +20,7 @@ class Details extends React.Component {
               </div>
               <div className={classes.ModalContent}>
                   <div className={cssDescription.join(' ')}>
-                    { this.countingSecond() }
+                    OLA
                   </div>
                   <div className={cssGallery.join(' ')}>
                       <img src="images/cake2.jpg" alt="Gallery" className={classes.GalleryImage} />

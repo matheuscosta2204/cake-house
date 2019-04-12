@@ -16,7 +16,11 @@ const modal = (props) => {
             </>
         );
     } else {
-        return ( <></> );
+        return ( 
+            <div className={classes.modalClosed}>
+                {props.children}
+            </div>
+        );
     }
 };
 

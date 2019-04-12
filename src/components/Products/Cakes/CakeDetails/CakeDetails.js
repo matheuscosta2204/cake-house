@@ -31,6 +31,6 @@ export default cakeDetails;
 const styles = StyleSheet.create({
     bounceInDown: {
         animationName: bounceInDown,
-        animationDuration: '1s'
+        animationDuration: '1.5s'
     }
 });

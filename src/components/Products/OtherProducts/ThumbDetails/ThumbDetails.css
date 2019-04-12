@@ -1,0 +1,22 @@
+.ThumbDetails {
+    width: 70%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.ThumbDetails h2 {
+    color: #A54D44;
+    font-size: 25px;
+    text-shadow: 2px 2px 2px rgba(54, 26, 23, 1);
+}
+
+.ThumbDetails p {
+    text-align: center;
+    color: #A54D44;
+    font-size: 20px;
+    /*text-shadow: 2px 2px 2px rgba(54, 26, 23, 1);*/
+    font-weight: 700;
+}

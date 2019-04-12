@@ -1,6 +1,9 @@
 import React from 'react';
+import { fadeIn } from 'react-animations';
+import { StyleSheet, css } from 'aphrodite';
 
 import classes from './ProductCircle.css';
+import ThumbDetails from '../ThumbDetails/ThumbDetails';
 
 class productCircle extends React.Component {
     state = {
@@ -9,10 +12,11 @@ class productCircle extends React.Component {
 
     renderContent = () => {
         if(this.state.hovered) {
-            const css = [classes.ProductCircleContent, classes.ProductCircleHoverd];
-            return (<div className={css.join(' ')}>Ola</div>);
+            const cssIn = [classes.ProductCircleContent, classes.ProductCircleHoverd];
+            return (<div className={cssIn.join(' ')}><ThumbDetails data={this.props.data} /></div>);
         } else {
-            return (<img src={this.props.url} className={classes.ProductCircleContent} />);
+            const cssOut = [classes.ProductCircleContent, css(styles.fadeIn)];
+            return (<img src={this.props.url} className={cssOut.join(' ')} />);
         }
     }
 
@@ -33,3 +37,10 @@ class productCircle extends React.Component {
 };
 
 export default productCircle;
+
+const styles = StyleSheet.create({
+    fadeIn: {
+        animationName: fadeIn,
+        animationDuration: '.5s'
+    }
+});

@@ -7,13 +7,16 @@ import Details from './Details/Details';
 
 const data = {
     cupCake: {
-        title: "CupCakes"
+        title: "CupCakes",
+        breefDescription: ["Bolos montados em pequenos potes de plastico;", "Praticidade para levar para viagem;"],
     },
     meringue: {
-        title: "Meringue"
+        title: "Meringue",
+        breefDescription: ["Merengues montados para viagem;", "Traga o recipiente e montamos;"],
     },
     candies: {
-        title: "Candies"
+        title: "Candies",
+        breefDescription: ["Docinhos by Gi Brigadeiro;", "Brigadeiro - Casadinho;", "Beijinho - Pao de mel;"],
     }
 }
 
@@ -36,7 +39,7 @@ class OtherProducts extends React.Component {
                 </div>
             </>
         );
-    }
+    };
 };
 
 export default OtherProducts;
