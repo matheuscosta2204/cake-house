@@ -70,15 +70,3 @@
         transform: rotateY(360deg);
     }
 }
-
-@keyframes productMouseLeave {
-    0% {
-        
-    }
-    50% {
-
-    }
-    100% {
-
-    }
-}

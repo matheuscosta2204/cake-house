@@ -7,8 +7,8 @@ const toolbarItems = () => (
     <div className={classes.ItemContainer}>
         <ToolbarItem to="home">Home</ToolbarItem>
         <ToolbarItem to="products">Products</ToolbarItem>
-        <ToolbarItem to="products">About</ToolbarItem>
-        <ToolbarItem to="products">Contact Us</ToolbarItem>
+        <ToolbarItem to="about">About</ToolbarItem>
+        <ToolbarItem to="footer">Contact Us</ToolbarItem>
     </div>
 );
 
