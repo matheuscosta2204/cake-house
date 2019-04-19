@@ -27,6 +27,7 @@
 .TextIntro p {
     color: white;
     font-size: 28px;
+    text-shadow: 2px 2px 4px #000000;
 }
 
 @media (max-width: 815px) {

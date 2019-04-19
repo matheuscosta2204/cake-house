@@ -20,10 +20,12 @@ class Details extends React.Component {
               </div>
               <div className={classes.ModalContent}>
                   <div className={cssDescription.join(' ')}>
-                    OLA
+                  {this.props.data.description.map((item, key) => (
+                      <p>{item}</p>
+                  ))}
                   </div>
                   <div className={cssGallery.join(' ')}>
-                      <img src="images/cake2.jpg" alt="Gallery" className={classes.GalleryImage} />
+                      <img src={this.props.data.img} alt="Gallery" className={classes.GalleryImage} />
                   </div>
               </div>
           </div>

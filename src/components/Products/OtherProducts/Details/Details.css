@@ -45,6 +45,17 @@
     height: 100%;
     background-color: white;
     border-bottom-left-radius: 8px;
+    background-color: #B89F7A;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.Description p {
+    color: white;
+    font-size: 25px;
+    text-shadow: 2px 2px 4px #000000;
 }
 
 .Gallery {
@@ -60,4 +71,8 @@
     height: 100%;
     width: 100%;
     border-bottom-right-radius: 8px;
+}
+
+.ModalHeader {
+    background-color: #A54D44;
 }
